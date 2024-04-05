@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Desafio 02</title>
+    <style>
+      body {
+        background-color: #f2f2f2;
+        font-family: sans-serif;
+      }
+
+      .container {
+        text-align: center;
+        margin: 0 auto;
+        max-width: 300px;
+      }
+
+      h1 {
+        color: #007bff;
+        font-size: 24px;
+      }
+
+      p {
+        margin-top: 20px;
+        font-size: 18px;
+      }
+
+      form {
+        padding: 1rem;
+        /* text-align: center; */
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.4);
+      }
+
+      input,
+      label {
+        display: block;
+        text-align: start;
+        margin: 8px auto;
+      }
+
+      input {
+        width: 100%;
+        box-sizing: border-box;
+        border-radius: 4px;
+        padding: 3px;
+        border: 1px solid #515151;
+      }
+
+      input:focus {
+        outline: 1px solid #007bff;
+      }
+
+      button {
+        background-color: #28a745;
+        color: #fff;
+        padding: 8px;
+        border: none;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Bem-vindo ao Desafio 02!</h1>
+      <p>Este é um desafio para praticar HTML, CSS e JavaScript.</p>
+      <form id="myForm">
+        <label for="username">Nome:</label>
+        <input type="text" id="username" name="username" autofocus required />
+
+        <label for="email">E-mail:</label>
+        <input type="email" id="email" name="email" required />
+
+        <button type="submit">Enviar</button>
+      </form>
+    </div>
+    <script>
+      document
+        .getElementById("myForm")
+        .addEventListener("submit", function (e) {
+          e.preventDefault(); // Prevent the default form submission
+
+          // Get the values from the form fields
+          const username = document.getElementById("username").value;
+          const email = document.getElementById("email").value;
+
+          // Display a welcome message with the username and email
+          alert(`Bem-vindo, ${username}! Seu e-mail é ${email}.`);
+        });
+    </script>
+  </body>
+</html>
