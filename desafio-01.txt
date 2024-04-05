@@ -1,0 +1,30 @@
+/* 01 - Crie uma pasta "desafio-01" e crie uma estrutura básica html em um arquivo index.html, e adicione os seguintes elementos:
+   - Adicione uma tag de elemento principal e dentro dela adicione:
+   - Um elemento de título principal com o texto "Título principal".
+   - Um elemento de parágrafo com o texto "Texto inserido em um elemento de parágrafo." abaixo do título principal.
+   - Dois elementos de título secundário seguidos de um parágrafo cada.
+   - O título secundário deve conter o texto "Título secundário".
+   - Os parágrafos devem conter o texto no formato: "Este é o parágrafo número "número" do conteúdo secundário.".
+*/
+
+/* 02 - Adicione um arquivo style.css e defina estilos para o seguinte:
+   - Remova os eventos de pointer de todos os elementos.
+   - No corpo (body): 
+      defina a cor de fundo como azul (#1249c9), remova as margens e defina uma fonte sem serifa.
+
+   - No elemento principal:
+       defina uma largura de 20 rem, uma margem de 3rem horizontal e auto nas laterais.
+       defina a cor de fundo como azul (##2c5bc7) espaçamento interno de 2rem.
+       defina uma borda de 6px sólida com as cores horizontais (#053fc7) e laterais (#7a1b77).
+       defina uma sombra em todas as bordas com 18px de espalhamento da cor preta (#fff) com 0.5 de opacidade.
+
+   - Faça com que todos os títulos tenham uma margem em cima e embaixo de 2rem e 0 nas laterias.
+   - Faça com que o título principal tenha cor branca (#fff) e estejam centralizado.
+   - Faça com que o título secundário tenha o evento de pointer visível e um cursor pointer.
+   - Faça com que todos os parágrafos (p) tenham cor cinza médio (#313131).
+*/
+
+/* 03 - Adicione um arquivo script.js e implemente o seguinte:
+   - Quando a página for carregada, exiba um alerta com a mensagem "Bem-vindo à nossa página!".
+   - Adicione um evento de clique em qualquer título (h2) que altere a cor do título para vermelho (#ff0000).
+*/

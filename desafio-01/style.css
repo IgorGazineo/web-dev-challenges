@@ -1,0 +1,38 @@
+* {
+  pointer-events: none;
+}
+
+body {
+  background-color: #1249c9;
+  font-family: sans-serif;
+  margin: 0;
+}
+
+main {
+  width: 20rem;
+  margin: 3rem auto;
+  background-color: #2c5bc7;
+  padding: 2rem;
+  border: 6px solid;
+  border-color: #053fc7 #7a1b77;
+  box-shadow: 0 0 18px rgba(0, 0, 0, 0.5);
+}
+
+h1,
+h2 {
+  margin: 2rem 0;
+}
+
+h1 {
+  color: #fff;
+  text-align: center;
+}
+
+h2 {
+  pointer-events: visible;
+  cursor: pointer;
+}
+
+p {
+  color: #313131;
+}
