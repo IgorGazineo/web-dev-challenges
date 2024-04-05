@@ -1,4 +1,4 @@
-/* 01 - Crie uma pasta "desafio-01" e crie uma estrutura básica html em um arquivo index.html, e adicione os seguintes elementos:
+/* 01 - Dentro da pasta "desafio-01" crie uma estrutura básica html em um arquivo index.html, e adicione os seguintes elementos:
    - Adicione uma tag de elemento principal e dentro dela adicione:
    - Um elemento de título principal com o texto "Título principal".
    - Um elemento de parágrafo com o texto "Texto inserido em um elemento de parágrafo." abaixo do título principal.
