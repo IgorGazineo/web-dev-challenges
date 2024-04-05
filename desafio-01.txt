@@ -16,7 +16,7 @@
        defina uma largura de 20 rem, uma margem de 3rem horizontal e auto nas laterais.
        defina a cor de fundo como azul (##2c5bc7) espaçamento interno de 2rem.
        defina uma borda de 6px sólida com as cores horizontais (#053fc7) e laterais (#7a1b77).
-       defina uma sombra em todas as bordas com 18px de espalhamento da cor preta (#fff) com 0.5 de opacidade.
+       defina uma sombra em todos os lados com 18px de espalhamento da cor preta (#000) com 0.5 de opacidade.
 
    - Faça com que todos os títulos tenham uma margem em cima e embaixo de 2rem e 0 nas laterias.
    - Faça com que o título principal tenha cor branca (#fff) e estejam centralizado.
