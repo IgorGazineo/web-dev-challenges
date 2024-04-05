@@ -23,7 +23,7 @@ Estilize o formulário com um espaçamento interno de 1rem e borda sólida de 1p
 Arredonde as bordas do formulário em 4px e adicione sombra preta de 2px para direita e para baixo.
 Coloque um espalhamento na sombra de 6px e 0.4 de opacidade.
 Defina o input e o label do formulário como display block.
-Adicione margem horizontal de 8px auto aos inputs e labels e coloque o alinhamento de texto para a esquerda.
+Adicione margem horizontal de 8px auto aos inputs e labels e coloque o alinhamento de texto das labels para a esquerda.
 Defina uma largura de 100% aos inputs e faça com que eles fiquem centralizados no formulário.
 Adicione aos inputs espaçamento interno de 3px e arredonde as bordas em 4px.
 Defina a largura da borda dos inputs de 1px sólida com a cor #515151.
@@ -34,6 +34,10 @@ Estilize o botão de envio do formulário com uma cor de fundo verde (#28a745), 
 /*
 03 - Crie um arquivo script.js dentro da mesma pasta e implemente o seguinte:
 
-Adicione um evento de clique ao botão de envio do formulário que exiba um alerta com uma mensagem de boas-vindas contendo o nome do usuário e seu e-mail.
+Adicione um evento de submit ao formulário que exiba um alerta com uma mensagem "Bem vindo(a) 'nome'. O seu email é: 'email'.".
+Para isso, crie um objeto "person" que contem as propriedades "name" e "email".
+As propriedades "name" e "email" irão receber os valores dos respectivos inputs.
+Depois passe os valores dessas propriedades para variáveis via destructuring.
+E por fim, inclua as variáves na mensagem e exiba no alerta.
 Certifique-se de incluir as informações necessárias nos elementos HTML, CSS e JavaScript conforme descrito no desafio. Boa sorte!
 */
