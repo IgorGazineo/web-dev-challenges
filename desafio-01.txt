@@ -7,7 +7,7 @@
    - Os parágrafos devem conter o texto no formato: "Este é o parágrafo número "número" do conteúdo secundário.".
 */
 
-/* 02 - Adicione um arquivo style.css e defina estilos para o seguinte:
+/* 02 - Adicione o arquivo style.css e defina estilos para o seguinte:
    - Remova os eventos de pointer de todos os elementos.
    - No corpo (body): 
       defina a cor de fundo como azul (#1249c9), remova as margens e defina uma fonte sem serifa.
@@ -24,7 +24,7 @@
    - Faça com que todos os parágrafos (p) tenham cor cinza médio (#313131).
 */
 
-/* 03 - Adicione um arquivo script.js e implemente o seguinte:
+/* 03 - Adicione o arquivo script.js e implemente o seguinte:
    - Quando a página for carregada, exiba um alerta com a mensagem "Bem-vindo à nossa página!".
    - Adicione um evento de clique em qualquer título (h2) que altere a cor do título para vermelho (#ff0000).
 */
