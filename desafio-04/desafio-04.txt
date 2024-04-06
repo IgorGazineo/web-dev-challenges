@@ -1,0 +1,46 @@
+<!--
+Parte de HTML:
+Crie uma estrutura básica em HTML com as tags <html>, <head> e <body>.
+Adicione um título à página usando a tag <title> com o texto "Desafio To-Do List".
+Dentro do <body>, crie um <header> com um <h1> e um <input> para adicionar novas tarefas. O <input> deve ter um atributo type com o valor "text" e um id com o valor "taskInput".
+Abaixo do <header>, crie um <main> para listar as tarefas.
+No <main>, adicione um <ul> com um id com o valor "taskList" para representar a lista de tarefas.
+-->
+
+/*
+Parte de CSS:
+Aplique um estilo ao <body> para definir uma cor de fundo e uma fonte. Use background-color com o valor "#f0f0f0" e font-family com o valor "Arial, sans-serif".
+Estilize o <header> para ter uma cor de fundo escura (#333), texto branco (#fff), espaçamento interno (padding) de 10px, e um layout flexível (display: flex) com alinhamento (justify-content) entre os elementos.
+Estilize o <input> dentro do <header> com padding de 8px, uma borda sólida (border) de 1px com cor cinza (#ccc), borda arredondada (border-radius) de 3px, e uma largura (width) de 70%.
+Estilize o <main> para ter um espaçamento interno (padding) de 20px e uma borda superior (border-top) de 1px sólida com cor cinza (#ccc).
+Estilize o <ul> com list-style-type definido como "none" para remover os pontos da lista, e padding de 0 para remover o espaçamento padrão.
+*/
+
+/*
+Parte de JavaScript:
+Adicione funcionalidade para adicionar novas tarefas à lista ao pressionar Enter no campo de entrada (<input>). Use o evento keypress para capturar a tecla "Enter" e adicionar um novo item à lista.
+Adicione funcionalidade para marcar tarefas como concluídas ao clicar no checkbox. Use o evento click para adicionar ou remover a classe "completed" ao item da lista.
+Adicione funcionalidade para remover tarefas ao clicar no botão de remoção (<button>). Use o evento click para remover o item da lista quando o botão for clicado.
+*/
+
+
+### Desafio de Lista de Tarefas (To-Do List)
+
+#### Parte de HTML:
+1. Estrutura básica em HTML com as tags `<html>`, `<head>` e `<body>`.
+2. `<title>` com o texto "Desafio To-Do List".
+3. `<header>` com `<h1>` e `<input>`:
+   - `<input>` com `type="text"` e `id="taskInput"` para adicionar tarefas.
+4. `<main>` com `<ul id="taskList">` para listar as tarefas.
+
+#### Parte de CSS:
+1. `<body>` com `background-color: #f0f0f0` e `font-family: Arial, sans-serif`.
+2. `<header>` com `background-color: #333`, `color: #fff`, `padding: 10px` e `display: flex`.
+3. `<input>` em `<header>` com `padding: 8px`, `border: 1px solid #ccc`, `border-radius: 3px`, e `width: 70%`.
+4. `<main>` com `padding: 20px` e `border-top: 1px solid #ccc`.
+5. `<ul>` com `list-style-type: none` e `padding: 0`.
+
+#### Parte de JavaScript:
+1. Adicionar novas tarefas ao pressionar Enter no `<input>` com `id="taskInput"`.
+2. Marcar tarefas como concluídas ao clicar no item da lista.
+3. Remover tarefas ao clicar no botão de remoção dentro de cada item da lista.
