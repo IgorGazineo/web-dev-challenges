@@ -1,0 +1,29 @@
+<!--
+Crie uma estrutura básica em HTML com as tags <html>, <head> e <body>.
+Adicione um título à página usando a tag <title> com o texto "Desafio HTML, CSS e JavaScript".
+Dentro do <body>, crie um <div> com a classe "container".
+Dentro do <div> com a classe "container", crie um <h1> com o texto "Desafio de Programação".
+Abaixo do <h1>, crie um <p> com o texto "Bem-vindo ao desafio de HTML, CSS e JavaScript!".
+Crie um botão <button> com o texto "Clique para mostrar/ocultar mensagem" e um ID "toggleButton".
+-->
+/*
+Parte de CSS:
+Aplique um estilo ao <body> para definir a cor de fundo como cinza claro (#f2f2f2) e a família de fontes como "sans-serif".
+Estilize o <div> com a classe "container" para ter uma largura de 80%, estar centralizado na página, ter um fundo branco (#ffffff), estar alinhado ao centro e ter um espaçamento interno de 2 rem.
+Estilize o <h1> para ter cor azul (#007bff) e estar alinhado ao centro.
+Estilize o <p> para estar alinhado ao centro.
+Estilize o <button> para ter um fundo verde (#28a745), texto branco (#ffffff), um espaçamento interno de 10 pixels em todos os lados, borda arredondada com um raio de 5 pixels, estar centralizado, não ter borda visível, ter um cursor de tipo ponteiro ao passar o mouse e ter uma transição suave de 0.5 segundos na mudança de cor de fundo.
+Quando o botão estiver em estado de hover, altere o fundo para uma tonalidade mais escura de verde (#218939).
+Quando o botão estiver em estado de clique, aplique uma escala de redução de 0.98 para dar um feedback visual de clique.
+*/
+
+/*
+Parte de JavaScript:
+Crie uma constante chamada toggleButton que seleciona o elemento com o ID "toggleButton".
+Adicione um evento de clique ao toggleButton que executa uma função de callback.
+Na função de callback, selecione o elemento <p> da página.
+Verifique se o texto do elemento <p> está vazio.
+Se o texto não estiver vazio, limpe o texto do <p> e altere o texto do toggleButton para "Clique para mostrar mensagem".
+Se o texto estiver vazio, defina o texto do <p> como "Bem-vindo ao desafio de HTML, CSS e JavaScript!" e altere o texto do toggleButton para "Clique para ocultar mensagem".
+Este código JavaScript adiciona interatividade à página, permitindo que o usuário clique no botão para mostrar ou ocultar uma mensagem no <p> conforme necessário.
+*/

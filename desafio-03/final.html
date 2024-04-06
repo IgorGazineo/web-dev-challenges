@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Desafio 03</title>
+    <style>
+      body {
+        background-color: #f2f2f2;
+        font-family: sans-serif;
+      }
+
+      .container {
+        width: 80%;
+        margin: 20px auto;
+        background-color: #fff;
+        text-align: center;
+        padding: 2rem;
+      }
+
+      h1 {
+        color: #007bff;
+        text-align: center;
+      }
+
+      p {
+        text-align: center;
+      }
+
+      button {
+        background-color: #28a745;
+        color: #fff;
+        padding: 10px;
+        border-radius: 5px;
+        margin: auto;
+        border: none;
+        cursor: pointer;
+        transition: background-color 0.5s;
+      }
+
+      button:hover {
+        background-color: #218939;
+      }
+
+      button:active {
+        scale: 0.98;
+      }
+    </style>
+  </head>
+  <body>
+    <main class="container">
+      <h1>Desafio de Programação</h1>
+      <p>Bem-vindo ao desafio de HTML, CSS e JavaScript!</p>
+      <button id="toggleButton">Clique para ocultar mensagem</button>
+    </main>
+
+    <script>
+      const toggleButton = document.querySelector("#toggleButton");
+
+      toggleButton.addEventListener("click", () => {
+        const paragraphElement = document.querySelector("p");
+
+        const isParagraphElementEmpty = paragraphElement.textContent === "";
+        if (!isParagraphElementEmpty) {
+          paragraphElement.textContent = "";
+          toggleButton.textContent = "Clique para mostrar mensagem";
+        } else {
+          paragraphElement.textContent =
+            "Bem-vindo ao desafio de HTML, CSS e JavaScript!";
+          toggleButton.textContent = "Clique para ocultar mensagem";
+        }
+      });
+    </script>
+  </body>
+</html>
