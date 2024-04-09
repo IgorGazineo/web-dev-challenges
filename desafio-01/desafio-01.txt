@@ -1,27 +1,92 @@
-<!-- 01 - Dentro da pasta "desafio-01" crie uma estrutura básica html em um arquivo index.html, e adicione os seguintes elementos:
-   - Adicione uma tag de elemento principal e dentro dela adicione:
-   - Um elemento de título principal com o texto "Título principal".
-   - Um elemento de parágrafo com o texto "Texto inserido em um elemento de parágrafo." abaixo do título principal.
-   - Dois elementos de título secundário seguidos de um parágrafo cada.
-   - O título secundário deve conter o texto "Título secundário".
-   - Os parágrafos devem conter o texto no formato: "Este é o parágrafo número "número" do conteúdo secundário.".
+HTML
+<!-- Estrutura do HTML:
+
+Crie um arquivo HTML chamado index.html.
+Abra o arquivo index.html em um editor de texto ou IDE.
+Cabeçalho da Página:
+
+Inicie o documento com a declaração <!DOCTYPE html> para indicar que este é um documento HTML5.
+Abra a tag <html lang="pt-BR"> para definir o idioma como Português do Brasil.
+Seção Head:
+
+Abra a tag <head> para incluir as configurações e metadados da página.
+Dentro do <head>, adicione a meta tag para o conjunto de caracteres UTF-8: <meta charset="UTF-8">.
+Adicione a meta tag para o viewport para garantir uma boa visualização em dispositivos móveis: <meta name="viewport" content="width=device-width, initial-scale=1.0">.
+Defina o título da página como "Projeto Número 1 - JavaScript": <title>Projeto Número 1 - JavaScript</title>.
+Conecte o arquivo CSS styles.css à página HTML: <link rel="stylesheet" href="styles.css">.
+Corpo da Página:
+
+Abra a tag <body> para iniciar o conteúdo visível da página.
+Cabeçalho da Página (Header):
+
+Dentro da tag <body>, crie um cabeçalho <header> para o topo da página.
+No <header>, adicione um título <h1> com o texto "Projeto Número 1".
+Logo abaixo do <h1>, inclua um parágrafo <p> com a descrição "Um exemplo simples de JavaScript".
+Conteúdo Principal (Main):
+
+Abaixo do <header>, crie uma seção principal <main> para o conteúdo principal da página.
+Formulário:
+
+Dentro do <main>, crie uma <div> com a classe container-form para o formulário.
+No interior da <div>, adicione um título <h2> com o texto "Formulário".
+Em seguida, crie um formulário <form> com o id="userForm" para processar os dados.
+No formulário, inclua um rótulo <label> com o texto "Nome:" para o campo de entrada do nome.
+Após o rótulo, adicione um campo de entrada <input> com o type="text" e o id="nameInput".
+Logo abaixo, inclua outro rótulo <label> com o texto "Email:" para o campo de entrada do email.
+Após o segundo rótulo, adicione um campo de entrada <input> com o type="email" e o id="emailInput".
+Por fim, adicione um botão <button> com o texto "Enviar" e o type="submit" para enviar o formulário.
+Resultado do Formulário:
+
+Após a <div> com a classe container-form, crie outra <div> com a classe container-result para exibir o resultado do formulário.
+Dentro desta <div>, adicione um título <h2> com o texto "Resultado".
+Abaixo do título, inclua um parágrafo <p> com o id="formResult" para exibir o resultado após o envio do formulário.
+Finalizando o HTML:
+
+Feche todas as tags abertas corretamente para garantir a validade do documento HTML.
+Feche as tags <head>, <header>, <main>, <form>, <div> e <body> na ordem correta.
 -->
 
-/* 02 - Adicione o arquivo style.css e defina estilos para o seguinte:
-   - Remova os eventos de pointer de todos os elementos.
-   - No corpo (body): 
-      defina a cor de fundo como azul (#1249c9), remova as margens e defina uma fonte sem serifa.
+CSS
+/* 
+Estilo Global:
+Defina a fonte padrão para todo o documento como Arial ou outra fonte sans-serif de sua escolha para garantir uma boa legibilidade.
+Zere a margem e o preenchimento do corpo (<body>) para evitar espaços indesejados ao redor do conteúdo.
+Defina a cor de fundo do corpo como um cinza claro (#f4f4f4) para uma aparência suave.
+Defina a cor do texto padrão como um cinza escuro (#333) para boa legibilidade sobre o fundo claro.
 
-   - No elemento principal:
-       defina uma largura de 20 rem, uma margem de 3rem horizontal e auto nas laterais.
-       defina a cor de fundo como azul (##2c5bc7) espaçamento interno de 2rem.
-       defina uma borda de 6px sólida com as cores horizontais (#053fc7) e laterais (#7a1b77).
-       defina uma sombra em todos os lados com 18px de espalhamento da cor preta (#000) com 0.5 de opacidade.
+Estilo do Cabeçalho (Header):
+Defina o fundo do cabeçalho (<header>) como azul (#007bff) para destacar o topo da página.
+Defina a cor do texto do cabeçalho como branco (#ffffff) para contraste e legibilidade.
+Centralize o texto dentro do cabeçalho utilizando text-align: center.
+Adicione um espaçamento interno de 20px no topo e na parte inferior do cabeçalho usando padding: 20px 0 para melhor aparência visual.
 
-   - Faça com que todos os títulos tenham uma margem em cima e embaixo de 2rem e 0 nas laterias.
-   - Faça com que o título principal tenha cor branca (#fff) e estejam centralizado.
-   - Faça com que o título secundário tenha o evento de pointer visível e um cursor pointer.
-   - Faça com que todos os parágrafos (p) tenham cor cinza médio (#313131).
+Estilo do Contêiner (Container):
+Defina a largura máxima do contêiner principal (.container) como 600px para controlar o layout em dispositivos maiores.
+Centralize o contêiner horizontalmente na página usando margin: 20px auto.
+Adicione um preenchimento interno de 20px no contêiner para espaçamento interno dos elementos.
+Defina o fundo do contêiner como branco (#fff) para contraste com o fundo da página.
+Arredonde as bordas do contêiner em 5px para suavizar a aparência utilizando border-radius: 5px.
+Adicione uma sombra suave ao contêiner para dar uma sensação de elevação com box-shadow.
+
+Estilo dos Títulos (h2):
+Remova a margem superior padrão do título (<h2>) dentro do contêiner utilizando margin-top: 0.
+
+Estilo dos Rótulos (Label):
+Exiba os rótulos (<label>) como blocos para garantir que fiquem em linhas separadas utilizando display: block.
+Adicione uma pequena margem inferior aos rótulos para espaçamento vertical com margin-bottom: 5px.
+
+Estilo dos Campos de Entrada e Botão:
+Defina a largura dos campos de entrada (<input>) e botão (<button>) como 100% do contêiner para preencher todo o espaço disponível.
+Adicione um preenchimento interno de 8px nos campos de entrada e no botão para espaçamento interno dos conteúdos.
+Inclua uma pequena margem inferior nos campos de entrada e no botão para espaçamento vertical entre eles com margin-bottom: 10px.
+Defina as bordas dos campos de entrada como 1px sólida, cinza (#ccc), e arredonde as bordas em 3px para suavizar a aparência com border: 1px solid #ccc; border-radius: 3px.
+Utilize box-sizing: border-box nos campos de entrada para garantir que o preenchimento e as bordas não aumentem a largura total dos elementos.
+Estilize o botão com um fundo azul (#007bff), texto branco (#ffffff) e cursor de apontar para indicar que é clicável.
+
+Estilo do Resultado do Formulário (Container-Result):
+Aplique estilos semelhantes ao contêiner resultante (.container-result) como feito para o contêiner principal (.container).
+Defina a margem superior do título (<h2>) dentro do contêiner resultante como 0 para remover a margem padrão.
+Garanta que o parágrafo (<p>) dentro do contêiner resultante tenha uma margem superior de 0 para uma apresentação mais limpa e coesa.
 */
 
 /* 03 - Adicione o arquivo script.js e implemente o seguinte:

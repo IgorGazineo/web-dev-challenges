@@ -1,68 +1,146 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Projeto Número 1 - Introdução ao JavaScript</title>
     <style>
-      * {
-        pointer-events: none;
-      }
-
       body {
-        background-color: #1249c9;
-        font-family: sans-serif;
+        font-family: Arial, sans-serif;
         margin: 0;
+        padding: 0;
+        background-color: #f4f4f4;
+        color: #333;
       }
 
-      main {
-        width: 20rem;
-        margin: 3rem auto;
-        background-color: #2c5bc7;
-        padding: 2rem;
-        border: 6px solid;
-        border-color: #053fc7 #7a1b77;
-        box-shadow: 0 0 18px rgba(0, 0, 0, 0.5);
-      }
-
-      h1,
-      h2 {
-        margin: 2rem 0;
-      }
-
-      h1 {
-        color: #fff;
+      header {
+        background-color: #007bff;
+        color: white;
         text-align: center;
+        padding: 20px 0;
       }
 
-      h2 {
-        pointer-events: visible;
+      .container {
+        max-width: 600px;
+        margin: 20px auto;
+        padding: 20px;
+        background-color: #fff;
+        border-radius: 5px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      }
+
+      .container h2 {
+        margin-top: 0;
+      }
+
+      label {
+        display: block;
+        margin-bottom: 5px;
+      }
+
+      input[type="text"],
+      input[type="email"],
+      button {
+        width: 100%;
+        padding: 8px;
+        margin-bottom: 10px;
+        border: 1px solid #ccc;
+        border-radius: 3px;
+        box-sizing: border-box;
+      }
+
+      button {
+        background-color: #007bff;
+        color: white;
         cursor: pointer;
       }
 
-      p {
-        color: #313131;
+      .container-result {
+        max-width: 600px;
+        margin: 20px auto;
+        padding: 20px;
+        background-color: #fff;
+        border-radius: 5px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      }
+
+      .container-result h2 {
+        margin-top: 0;
+      }
+
+      p#form-result {
+        margin-top: 0;
       }
     </style>
   </head>
   <body>
+    <header>
+      <h1>Projeto Número 1</h1>
+      <p>Um exemplo simples de JavaScript</p>
+    </header>
     <main>
-      <h1>Título principal</h1>
-      <p>Texto inserido em um elemento de parágrafo.</p>
-      <h2>Título secundário</h2>
-      <p>Este é o parágrafo número 1 do conteúdo secundário.</p>
-      <h2>Título secundário</h2>
-      <p>Este é o parágrafo número 2 do conteúdo secundário.</p>
+      <div class="container-form">
+        <h2>Formulário</h2>
+        <form action="" id="user-form">
+          <label for="name-input">Nome:</label>
+          <input type="text" id="name-input" />
+          <label for="email-input">Email:</label>
+          <input type="email" id="email-input" />
+          <button id="submit-button" type="submit">Enviar</button>
+        </form>
+      </div>
+      <div class="container-result">
+        <h2>Resultado</h2>
+        <p id="form-result">
+          Por favor, preencha todos os campos do formulário.
+        </p>
+      </div>
     </main>
     <script>
-      alert("Bem-vindo à nossa página!");
-      const secondaryTitles = document.querySelectorAll("h2");
+      // Usando prompt() para obter o nome do usuário
+      const nome = prompt("Qual é o seu nome?");
 
-      secondaryTitles.forEach((title) => {
-        title.addEventListener("click", ({ target }) => {
-          target.style.color = "red";
-        });
-      });
+      // Usando alert() para exibir uma mensagem de boas-vindas
+      alert(`Olá, ${nome}! Bem-vindo ao nosso primeiro projeto em JavaScript.`);
+
+      // Usando confirm() para perguntar ao usuário se ele deseja continuar
+      const continuar = confirm("Você gostaria de continuar?");
+
+      if (continuar) {
+        // Usando console.log() para exibir uma mensagem no console do navegador
+        console.log("O usuário decidiu continuar.");
+
+        // Usando variáveis e operadores aritméticos para realizar cálculos simples
+        const numero1 = 10;
+        const numero2 = 5;
+        const resultadoSoma = numero1 + numero2;
+        const resultadoSubtracao = numero1 - numero2;
+        const resultadoMultiplicacao = numero1 * numero2;
+        const resultadoDivisao = numero1 / numero2;
+
+        console.log("Resultado da soma:", resultadoSoma);
+        console.log("Resultado da subtração:", resultadoSubtracao);
+        console.log("Resultado da multiplicação:", resultadoMultiplicacao);
+        console.log("Resultado da divisão:", resultadoDivisao);
+
+        // Usando métodos de string: length, toUpperCase, toLowerCase, indexOf, lastIndexOf, slice, replace
+        const frase = "Olá, mundo!";
+        console.log("Tamanho da frase:", frase.length);
+        console.log("Frase em maiúsculas:", frase.toUpperCase());
+        console.log("Frase em minúsculas:", frase.toLowerCase());
+        console.log("Índice da palavra 'mundo':", frase.indexOf("mundo"));
+        console.log("Último índice da letra 'o':", frase.lastIndexOf("o"));
+        console.log(
+          "Parte da frase após a vírgula:",
+          frase.slice(frase.indexOf(" ") + 1)
+        );
+        console.log(
+          "Frase substituindo 'mundo' por 'JavaScript':",
+          frase.replace("mundo", "JavaScript")
+        );
+      } else {
+        console.log("O usuário cancelou.");
+      }
     </script>
   </body>
 </html>

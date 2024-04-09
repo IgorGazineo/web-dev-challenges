@@ -21,20 +21,20 @@ button:hover com background-color: #c0392b.
 */
 /*
 Parte de JavaScript:
-Adicionar Tarefas:
 
+Adicionar Tarefas:
 Ao pressionar a tecla "Enter" no <input> com id="taskInput", uma nova tarefa é adicionada à lista.
 Verifica-se se a tecla pressionada é "Enter" e se o valor do <input> está preenchido (trim() !== "").
 Cria-se um novo elemento <li> com o texto da tarefa.
 Adiciona-se um botão "Remover" dentro do item da lista.
 Ao clicar no botão "Remover", a tarefa é removida da lista.
-Marcar Tarefas Concluídas:
 
+Marcar Tarefas Concluídas:
 Ao clicar em um item da lista (<li>), a tarefa é marcada como concluída.
 Adiciona-se a classe "completed" ao item da lista.
 A classe "completed" estiliza a tarefa marcada como concluída com um risco no texto (text-decoration: line-through) e uma cor mais suave (color: #888).
-Remover Tarefas:
 
+Remover Tarefas:
 Ao clicar no botão "Remover" dentro de um item da lista, a tarefa é removida.
 O evento de clique (click) é adicionado ao botão de remoção.
 Quando o botão é clicado, o item da lista é removido usando o método remove().

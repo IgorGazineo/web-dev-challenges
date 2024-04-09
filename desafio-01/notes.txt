@@ -1,0 +1,13 @@
+prompt();
+alert();
+confirm();
+console.log();
+variável;
+length;
+toUpperCase();
+toLowerCase();
+indexOf();
+lastIndexOf();
+slice();
+replace();
+operadores aritméticos;
