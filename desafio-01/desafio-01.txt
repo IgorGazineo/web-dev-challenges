@@ -49,6 +49,7 @@ Feche as tags <head>, <header>, <main>, <form>, <div> e <body> na ordem correta.
 CSS
 /* 
 Estilo Global:
+
 Defina a fonte padrão para todo o documento como Arial ou outra fonte sans-serif de sua escolha para garantir uma boa legibilidade.
 Zere a margem e o preenchimento do corpo (<body>) para evitar espaços indesejados ao redor do conteúdo.
 Defina a cor de fundo do corpo como um cinza claro (#f4f4f4) para uma aparência suave.
@@ -89,7 +90,61 @@ Defina a margem superior do título (<h2>) dentro do contêiner resultante como 
 Garanta que o parágrafo (<p>) dentro do contêiner resultante tenha uma margem superior de 0 para uma apresentação mais limpa e coesa.
 */
 
-/* 03 - Adicione o arquivo script.js e implemente o seguinte:
-   - Quando a página for carregada, exiba um alerta com a mensagem "Bem-vindo à nossa página!".
-   - Adicione um evento de clique em qualquer título (h2) que altere a cor do título para vermelho (#ff0000).
+JS
+/* 
+Obtenção do Nome do Usuário:
+Utiliza o método prompt() para solicitar ao usuário que insira o seu nome.
+A frase "Qual é o seu nome?" deve aparecer no prompt.
+Armazena o nome fornecido pelo usuário na variável nome.
+
+Exibição da Mensagem de Boas-Vindas:
+Utiliza o método alert() para exibir uma mensagem de boas-vindas ao usuário, utilizando o nome fornecido.
+Após inserir o nome no prompt, a mensagem "Olá, {nome}! Bem-vindo ao nosso primeiro projeto em JavaScript." deve aparecer no alert, substituindo {nome} pelo nome inserido.
+A mensagem de boas-vindas inclui o nome do usuário utilizando interpolação de strings (${nome}).
+
+Confirmação para Continuar:
+Utiliza o método confirm() para perguntar ao usuário se ele deseja continuar.
+Após clicar em "OK" ou "Cancelar" no alert, a frase "Você gostaria de continuar?" deve aparecer no confirm.
+Armazena a resposta do usuário (verdadeiro ou falso) na variável continuar.
+
+Verificação da Continuação:
+Verifica se o usuário decidiu continuar (resposta verdadeira) utilizando uma estrutura condicional if.
+
+Exibição de Mensagem no Console:
+Se o usuário clicar em "OK" no confirm, a mensagem "O usuário decidiu continuar." deve aparecer no console.
+A mensagem informa que o usuário decidiu continuar.
+
+Cálculos Simples com Variáveis e Operadores Aritméticos:
+Utiliza variáveis (numero1 e numero2) e operadores aritméticos (+, -, *, /) para realizar cálculos simples de adição, subtração, multiplicação e divisão.
+Armazena os resultados dos cálculos nas variáveis resultadoSoma, resultadoSubtracao, resultadoMultiplicacao e resultadoDivisao.
+Utiliza o método console.log() para exibir os resultados dos cálculos no console do navegador.
+
+Manipulação de Strings com Métodos:
+Utiliza métodos de string como length, toUpperCase, toLowerCase, indexOf, lastIndexOf, slice, replace para manipular uma frase.
+Exibe informações sobre a frase como o tamanho, versões em maiúsculas e minúsculas, índices de palavras e letras, parte da frase após a vírgula e substituição de palavras.
+Mensagem no Console em Caso de Cancelamento:
+
+Caso o usuário cancele a confirmação, exibe uma mensagem no console do navegador informando que o usuário cancelou.
+
+
+
+
+Caso contrário, se o usuário clicar em "Cancelar", a mensagem "O usuário cancelou." deve aparecer no console.
+
+Cálculos Simples com Variáveis e Operadores Aritméticos:
+Após confirmar a continuação, as seguintes mensagens devem aparecer no console:
+"Resultado da soma: {resultadoSoma}" substituindo {resultadoSoma} pelo resultado da soma dos números 10 e 5.
+"Resultado da subtração: {resultadoSubtracao}" substituindo {resultadoSubtracao} pelo resultado da subtração dos números 10 e 5.
+"Resultado da multiplicação: {resultadoMultiplicacao}" substituindo {resultadoMultiplicacao} pelo resultado da multiplicação dos números 10 e 5.
+"Resultado da divisão: {resultadoDivisao}" substituindo {resultadoDivisao} pelo resultado da divisão dos números 10 e 5.
+
+Manipulação de Strings com Métodos:
+Após confirmar a continuação, as seguintes mensagens devem aparecer no console:
+"Tamanho da frase: {tamanho}" substituindo {tamanho} pelo tamanho da frase "Olá, mundo!".
+"Frase em maiúsculas: {fraseMaiuscula}" substituindo {fraseMaiuscula} pela frase "OLÁ, MUNDO!".
+"Frase em minúsculas: {fraseMinuscula}" substituindo {fraseMinuscula} pela frase "olá, mundo!".
+"Índice da palavra 'mundo': {indiceMundo}" substituindo {indiceMundo} pelo índice da palavra "mundo" na frase.
+"Último índice da letra 'o': {ultimoIndiceO}" substituindo {ultimoIndiceO} pelo último índice da letra "o" na frase.
+"Parte da frase após a vírgula: {parteAposVirgula}" substituindo {parteAposVirgula} pela parte da frase após a vírgula.
+"Frase substituindo 'mundo' por 'JavaScript': {fraseSubstituida}" substituindo {fraseSubstituida} pela frase com "mundo" substituído por "JavaScript".
 */
