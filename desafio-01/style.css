@@ -53,6 +53,10 @@ header {
   cursor: pointer;
 }
 
+.container-form button:active {
+  scale: 0.98;
+}
+
 .container-result h2,
 .container-result p {
   margin-top: 0;

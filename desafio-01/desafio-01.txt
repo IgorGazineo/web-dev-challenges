@@ -31,10 +31,10 @@ Dentro do <main>, crie uma <div> com a classe container-form para o formulário.
 No interior da <div>, adicione um título <h2> com o texto "Formulário".
 Em seguida, crie um formulário <form> com o id="user-form" para processar os dados.
 No formulário, inclua um rótulo <label> com o texto "Nome:" para o campo de entrada do nome.
-Após o rótulo, adicione um campo de entrada <input> com o type="text" e o id="name-input".
+Após o rótulo, adicione um campo de entrada <input> com o type="text", o id="name-input" e o name="user-name".
 Logo abaixo, inclua outro rótulo <label> com o texto "Email:" para o campo de entrada do email.
-Após o segundo rótulo, adicione um campo de entrada <input> com o type="email" e o id="email-input".
-Por fim, adicione um botão <button> com o texto "Enviar" e o type="submit" para enviar o formulário.
+Após o segundo rótulo, adicione um campo de entrada <input> com o type="email", o id="email-input" e o name="user-email".
+Por fim, adicione um botão <button> com o texto "Enviar" e o type="button" para enviar o formulário.
 Resultado do Formulário:
 
 Após a <div> com a classe container-form, crie outra <div> com a classe container-result para exibir o resultado do formulário.
@@ -83,7 +83,7 @@ Inclua uma pequena margem inferior nos campos de entrada e no botão para espaç
 Defina as bordas dos campos de entrada como 1px sólida, cinza (#ccc), e arredonde as bordas em 3px para suavizar a aparência com border: 1px solid #ccc; border-radius: 3px.
 Utilize box-sizing: border-box nos campos de entrada para garantir que o preenchimento e as bordas não aumentem a largura total dos elementos.
 Estilize o botão com um fundo azul (#007bff), texto branco (#ffffff) e cursor de apontar para indicar que é clicável.
-
+Defina uma escala de 0.98 para quando o botão for ativado (active).
 Estilo do Resultado do Formulário (Container-Result):
 Aplique estilos semelhantes ao contêiner resultante (.container-result) como feito para o contêiner principal (.container).
 Defina a margem superior do título (<h2>) dentro do contêiner resultante como 0 para remover a margem padrão.
