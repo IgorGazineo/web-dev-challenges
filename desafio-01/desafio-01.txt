@@ -29,17 +29,17 @@ Formulário:
 
 Dentro do <main>, crie uma <div> com a classe container-form para o formulário.
 No interior da <div>, adicione um título <h2> com o texto "Formulário".
-Em seguida, crie um formulário <form> com o id="userForm" para processar os dados.
+Em seguida, crie um formulário <form> com o id="user-form" para processar os dados.
 No formulário, inclua um rótulo <label> com o texto "Nome:" para o campo de entrada do nome.
-Após o rótulo, adicione um campo de entrada <input> com o type="text" e o id="nameInput".
+Após o rótulo, adicione um campo de entrada <input> com o type="text" e o id="name-input".
 Logo abaixo, inclua outro rótulo <label> com o texto "Email:" para o campo de entrada do email.
-Após o segundo rótulo, adicione um campo de entrada <input> com o type="email" e o id="emailInput".
+Após o segundo rótulo, adicione um campo de entrada <input> com o type="email" e o id="email-input".
 Por fim, adicione um botão <button> com o texto "Enviar" e o type="submit" para enviar o formulário.
 Resultado do Formulário:
 
 Após a <div> com a classe container-form, crie outra <div> com a classe container-result para exibir o resultado do formulário.
 Dentro desta <div>, adicione um título <h2> com o texto "Resultado".
-Abaixo do título, inclua um parágrafo <p> com o id="formResult" para exibir o resultado após o envio do formulário.
+Abaixo do título, inclua um parágrafo <p> com o id="form-result" com o texto "Por favor, preencha todos os campos do formulário.".
 Finalizando o HTML:
 
 Feche todas as tags abertas corretamente para garantir a validade do documento HTML.
@@ -62,7 +62,7 @@ Centralize o texto dentro do cabeçalho utilizando text-align: center.
 Adicione um espaçamento interno de 20px no topo e na parte inferior do cabeçalho usando padding: 20px 0 para melhor aparência visual.
 
 Estilo do Contêiner (Container):
-Defina a largura máxima do contêiner principal (.container) como 600px para controlar o layout em dispositivos maiores.
+Defina a largura máxima do contêiner principal (.container-form) como 600px para controlar o layout em dispositivos maiores.
 Centralize o contêiner horizontalmente na página usando margin: 20px auto.
 Adicione um preenchimento interno de 20px no contêiner para espaçamento interno dos elementos.
 Defina o fundo do contêiner como branco (#fff) para contraste com o fundo da página.
@@ -92,54 +92,39 @@ Garanta que o parágrafo (<p>) dentro do contêiner resultante tenha uma margem 
 
 JS
 /* 
-Obtenção do Nome do Usuário:
-Utiliza o método prompt() para solicitar ao usuário que insira o seu nome.
-A frase "Qual é o seu nome?" deve aparecer no prompt.
-Armazena o nome fornecido pelo usuário na variável nome.
+Solicitar nome do usuário:
 
-Exibição da Mensagem de Boas-Vindas:
-Utiliza o método alert() para exibir uma mensagem de boas-vindas ao usuário, utilizando o nome fornecido.
-Após inserir o nome no prompt, a mensagem "Olá, {nome}! Bem-vindo ao nosso primeiro projeto em JavaScript." deve aparecer no alert, substituindo {nome} pelo nome inserido.
-A mensagem de boas-vindas inclui o nome do usuário utilizando interpolação de strings (${nome}).
+Utilize prompt("Qual é o seu nome?") para solicitar o nome do usuário.
+Armazene o valor digitado na variável nome.
+Exibir mensagem de boas-vindas:
 
-Confirmação para Continuar:
-Utiliza o método confirm() para perguntar ao usuário se ele deseja continuar.
-Após clicar em "OK" ou "Cancelar" no alert, a frase "Você gostaria de continuar?" deve aparecer no confirm.
-Armazena a resposta do usuário (verdadeiro ou falso) na variável continuar.
+Utilize alert(Olá, ${nome}! Bem-vindo ao nosso primeiro projeto em JavaScript.); para exibir uma mensagem de boas-vindas ao usuário com o nome fornecido.
+Confirmar continuação:
 
-Verificação da Continuação:
-Verifica se o usuário decidiu continuar (resposta verdadeira) utilizando uma estrutura condicional if.
+Utilize const continuar = confirm("Você gostaria de continuar?"); para exibir uma caixa de diálogo de confirmação.
+Se o usuário clicar em "OK", a variável continuar será true; caso contrário, será false.
+Verificar decisão do usuário:
 
-Exibição de Mensagem no Console:
-Se o usuário clicar em "OK" no confirm, a mensagem "O usuário decidiu continuar." deve aparecer no console.
-A mensagem informa que o usuário decidiu continuar.
+Utilize um bloco if para verificar se o usuário decidiu continuar (continuar === true) ou cancelou (continuar === false).
+Processamento se continuar:
 
-Cálculos Simples com Variáveis e Operadores Aritméticos:
-Utiliza variáveis (numero1 e numero2) e operadores aritméticos (+, -, *, /) para realizar cálculos simples de adição, subtração, multiplicação e divisão.
-Armazena os resultados dos cálculos nas variáveis resultadoSoma, resultadoSubtracao, resultadoMultiplicacao e resultadoDivisao.
-Utiliza o método console.log() para exibir os resultados dos cálculos no console do navegador.
+Se o usuário decidir continuar:
+Defina uma variável cincoAnos com o valor 5.
+Utilize +prompt("Qual a sua idade?"); para solicitar a idade do usuário e converta o valor para um número.
+Exiba uma mensagem utilizando alert() para mostrar a idade atual e a idade daqui a 5 anos.
+Utilize prompt() para solicitar ao usuário que digite "Olá, mundo!".
+Armazene a frase digitada na variável frase.
+Manipulação da frase:
 
-Manipulação de Strings com Métodos:
-Utiliza métodos de string como length, toUpperCase, toLowerCase, indexOf, lastIndexOf, slice, replace para manipular uma frase.
-Exibe informações sobre a frase como o tamanho, versões em maiúsculas e minúsculas, índices de palavras e letras, parte da frase após a vírgula e substituição de palavras.
-Mensagem no Console em Caso de Cancelamento:
+Calcule o tamanho da frase usando frase.length e armazene o resultado na variável tamanho.
+Converta a frase para maiúsculas usando frase.toUpperCase() e armazene o resultado na variável fraseMaiuscula.
+Converta a frase para minúsculas usando frase.toLowerCase() e armazene o resultado na variável fraseMinuscula.
+Encontre o índice da palavra "mundo" na frase usando frase.indexOf("mundo") e armazene o resultado na variável indiceMundo.
+Encontre o último índice da letra 'o' na frase usando frase.lastIndexOf("o") e armazene o resultado na variável ultimoIndiceO.
+Extraia a parte da frase após a vírgula usando frase.slice(frase.indexOf(",") + 1) e armazene o resultado na variável parteAposVirgula.
+Substitua a palavra "mundo" por "JavaScript" na frase usando frase.replace("mundo", "JavaScript") e armazene o resultado na variável fraseSubstituida.
 
-Caso o usuário cancele a confirmação, exibe uma mensagem no console do navegador informando que o usuário cancelou.
-
-
-
-
-Caso contrário, se o usuário clicar em "Cancelar", a mensagem "O usuário cancelou." deve aparecer no console.
-
-Cálculos Simples com Variáveis e Operadores Aritméticos:
-Após confirmar a continuação, as seguintes mensagens devem aparecer no console:
-"Resultado da soma: {resultadoSoma}" substituindo {resultadoSoma} pelo resultado da soma dos números 10 e 5.
-"Resultado da subtração: {resultadoSubtracao}" substituindo {resultadoSubtracao} pelo resultado da subtração dos números 10 e 5.
-"Resultado da multiplicação: {resultadoMultiplicacao}" substituindo {resultadoMultiplicacao} pelo resultado da multiplicação dos números 10 e 5.
-"Resultado da divisão: {resultadoDivisao}" substituindo {resultadoDivisao} pelo resultado da divisão dos números 10 e 5.
-
-Manipulação de Strings com Métodos:
-Após confirmar a continuação, as seguintes mensagens devem aparecer no console:
+As seguintes mensagens devem aparecer no console:
 "Tamanho da frase: {tamanho}" substituindo {tamanho} pelo tamanho da frase "Olá, mundo!".
 "Frase em maiúsculas: {fraseMaiuscula}" substituindo {fraseMaiuscula} pela frase "OLÁ, MUNDO!".
 "Frase em minúsculas: {fraseMinuscula}" substituindo {fraseMinuscula} pela frase "olá, mundo!".
